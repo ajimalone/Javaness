@@ -1,0 +1,28 @@
+package activity1;
+
+import java.util.*;
+import javax.swing.JOptionPane;
+import java.io.*;
+
+
+public class one {
+	static Scanner scn = new Scanner(System.in);
+	public static void main(String[] args)  {
+		
+	double mt, fg, ave;
+	String sn, rm;
+	
+	sn = (JOptionPane.showInputDialog(null,"Student Name: ","Input:", JOptionPane.PLAIN_MESSAGE));
+	mt = Double.parseDouble(JOptionPane.showInputDialog(null,"Enter Midterm Grade: ","Input 1", JOptionPane.PLAIN_MESSAGE));
+	fg = Double.parseDouble(JOptionPane.showInputDialog(null,"Enter Final Grade: ","Input 1", JOptionPane.PLAIN_MESSAGE));
+	ave = (mt + fg) / 2;
+	
+	System.out.println("Student Name: " +  sn);
+	System.out.println("Average: " +  ave);
+	if (ave <= 3.12)
+		System.out.println("Remarks: Passed");
+	else
+		System.out.println("Remarks: Failed");
+		
+	}
+}
