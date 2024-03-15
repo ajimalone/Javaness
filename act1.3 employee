@@ -1,0 +1,24 @@
+package two;
+
+    import java.util.*; 
+    import java.io.*; 
+    import javax.swing.JOptionPane; 
+
+public class number2 {
+	public static void main(String[] args) 
+	{
+		String empname;
+		float rt, hw, dd, gp, np; 
+
+	empname = (JOptionPane.showInputDialog(null,"EMPLOYEE NAME: ","Input:", JOptionPane.PLAIN_MESSAGE));
+	rt = Float.parseFloat(JOptionPane.showInputDialog(null,"RATE PER HOUR: ","Input", JOptionPane.PLAIN_MESSAGE));
+	hw = Float.parseFloat(JOptionPane.showInputDialog(null,"NUMBER OF HOURS: ","Input", JOptionPane.PLAIN_MESSAGE));
+	dd = Float.parseFloat(JOptionPane.showInputDialog(null,"DEDUCTION: ","Input", JOptionPane.PLAIN_MESSAGE));
+	gp = (rt * hw);
+	np = (gp - dd);
+	System.out.println("Employee: " +  empname);
+	System.out.println("Gross Pay: " +  gp);
+	System.out.println("Net Pay: " +  np);
+
+	}
+}
