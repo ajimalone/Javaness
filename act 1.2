@@ -1,0 +1,29 @@
+package ty;
+import java.util.*; // for Scanner
+import javax.swing.JOptionPane; // for JOptionPane
+
+public class three {
+	public static void main(String[] args) //throws IOException // for BufferedReader
+	{
+		int num, lp, shore = 0;
+		num = Integer.parseInt(JOptionPane.showInputDialog(null,"INPUT A NUMBER: ","Input:", JOptionPane.PLAIN_MESSAGE));
+		for (lp = 1; lp <= num; ++lp)
+		{
+			if (num % lp == 0) {
+				System.out.print(lp + " ");
+				shore++;
+			}
+		}
+		if (shore > 2)
+		{
+			System.out.println("\nComposite Number");
+		}
+		else if (shore == 2)
+		{
+			System.out.println("\nPrime Number");
+		}
+		else
+			System.out.println("\nError Input");
+
+	}
+}
